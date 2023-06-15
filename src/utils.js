@@ -1,5 +1,5 @@
-import {descriptions} from './data.js';
 import {picture} from './model/picture.js';
+import {descriptions} from './data.js';
 import dayjs from 'dayjs';
 
 const EVENT_DATE_FORMAT = 'MMM D';
