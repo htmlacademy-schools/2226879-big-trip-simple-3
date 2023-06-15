@@ -8,21 +8,25 @@ import SortingView from '../view/sorting.js';
 
 export default class Presenter {
 
-  routePoint = new RouteView();
+  routeView = new RouteView();
 
-  constructor({ container }) {
+  constructor(routePointsModel) {
+    this.routePointsModel = routePointsModel;
+  }
+
+  init = (container) => {
+    this.routePoints = [...this.routePointsModel.getRoute()];
+    // eslint-disable-next-line no-console
+    console.log(this.routePoints);
     this.container = container;
-  }
 
-  init() {
     render(new SortingView(), this.container);
-    render(this.routePoint, this.container);
-    render(new CreationFormView(), this.routePoint.getElement());
-    render(new RoutePointView(), this.routePoint.getElement());
-    render(new EditionFormView(), this.routePoint.getElement());
+    render(this.routeView, this.container);
+    render(new CreationFormView(), this.routeView.getElement());
+    render(new EditionFormView(), this.routeView.getElement());
 
-    for (let i = 0; i < 3; ++i) {
-      render(new RoutePointView(), this.routePoint.getElement());
+    for (let i = 0; i < this.routePoints.length; ++i) {
+      render(new RoutePointView({tripPoint: this.routePoints[i]}), this.routeView.getElement());
     }
-  }
+  };
 }
