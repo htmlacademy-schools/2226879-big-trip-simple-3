@@ -1,6 +1,6 @@
 import {createElement} from '../render.js';
 import {getDestination, getDestinations} from '../mock/mock-destination.js';
-import {convertToFormDate, convertToTime, convertToUpperCase, getTime} from '../utils.js';
+import {convertToFormDate, convertToUpperCase, getTime} from '../utils.js';
 import {generatePoint} from '../mock/mock-point';
 
 const createDestinationTemplates = (destinations) =>
