@@ -1,6 +1,6 @@
 import {createElement} from '../render.js';
 import {getDestination} from '../mock/mock-destination.js';
-import {convertToDateTime, convertToEventDate, convertToEventDateTime, convertToTime} from '../utils.js';
+import {convertToDateTime, convertToEventDate, convertToEventDateTime, getTime} from '../utils.js';
 import {getOfferById} from '../mock/mock-offer.js';
 
 const createOffersTemplates = (offers) =>
@@ -24,9 +24,9 @@ const createRoutePointTemplate = (point) => {
   const eventDateTime = convertToEventDateTime(dateFrom);
   const eventDate = convertToEventDate(dateFrom);
   const fromDateTime = convertToDateTime(dateFrom);
-  const fromTime = convertToTime(dateFrom);
+  const fromTime = getTime(dateFrom);
   const toDateTime = convertToDateTime(dateTo);
-  const toTime = convertToTime(dateTo);
+  const toTime = getTime(dateTo);
 
   return `
   <li class="trip-events__item">
