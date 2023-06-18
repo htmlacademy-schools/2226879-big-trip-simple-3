@@ -52,3 +52,15 @@ export const dates = [
     dateTo: '2023-08-20T19:50:49.375Z'
   }
 ];
+
+export const photos = [
+  'https://static.nationalgeographic.co.uk/files/styles/image_3200/public/Sleep_Beirut%20Watefront%20%26%20FSBEI%20Location_HR_WEB.jpg?w=1900&h=1267',
+  'https://i0.wp.com/cms.babbel.news/wp-content/uploads/2019/03/beruit.jpg',
+  'https://statemag.state.gov/wp-content/uploads/2019/07/POM-Beirut-10.jpg',
+  'https://digital.ihg.com/is/image/ihg/intercontinental-beirut-5211629407-2x1',
+  'https://images.musement.com/cover/0005/76/fotolia-238286229-subscription-xxl-jpg_header-475227.jpeg?w=1200&h=630&q=95&fit=crop',
+  'https://cdn.britannica.com/54/141354-050-5CB31F3E/Remains-baths-buildings-Roman-Lebanon-Beirut.jpg',
+  'https://cf.bstatic.com/xdata/images/hotel/max1024x768/376575247.jpg?k=6b93842352807f5a61c799b1f84a99481e799b6984dbbd877af493264fccb0e4&o=&hp=1',
+  'https://cf.bstatic.com/xdata/images/hotel/max1024x768/397877425.jpg?k=0d920ea4476928bf34d38960ffa7fef760f99d251b2ab8492c52412b12438f6c&o=&hp=1',
+  'https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6e/ce/57.jpg'
+];

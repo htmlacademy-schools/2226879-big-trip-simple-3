@@ -5,7 +5,7 @@ import {createPicture, getRandomNumber} from '../utils.js';
 const destinations = [];
 
 const pictures = [];
-for (let i = 0; i < getRandomNumber(2, 5); ++i) {
+for (let i = 0; i < 4; ++i) {
   pictures.push(createPicture());
 }
 
